@@ -217,7 +217,7 @@ initTrackMetadata: function( newconfig ) {
                      deferred.resolve({success:true});
         }));
     });
-},
+}
 
 
 
