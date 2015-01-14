@@ -1,13 +1,7 @@
 define([
            'dojo/_base/declare',
            'dojo/_base/lang',
-           'dojo/on',
-           'dojo/keys',
            'dojo/Deferred',
-           'dojo/DeferredList',
-           'dojo/topic',
-           'dojo/aspect',
-           'dojo/request',
            'dojo/_base/array',
            'JBrowse/Plugin',
            'JBrowse/ConfigManager',
@@ -15,18 +9,12 @@ define([
        ],
 
        function(
-	   declare,
-	   lang,
-           on,
-           keys,
+           declare,
+           lang,
            Deferred,
-           DeferredList,
-           topic,
-           aspect,
-           request,
            array,
-	   JBrowsePlugin,
-	   ConfigManager
+           JBrowsePlugin,
+           ConfigManager
        ) {
 
 

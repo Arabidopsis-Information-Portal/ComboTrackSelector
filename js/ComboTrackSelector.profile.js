@@ -24,7 +24,6 @@ var profile = {
         'ComboTrackSelector/main': {
             include: [
                 'ComboTrackSelector',
-                'ComboTrackSelector/View/TrackList/Faceted'
             ],
             exclude: [ 'JBrowse' ]
         }
