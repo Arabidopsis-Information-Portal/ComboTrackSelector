@@ -23,7 +23,6 @@ return declare( JBrowsePlugin,
     constructor: function( args ) {
 	console.log("Loaded ComboTrackSelector plugin");
 	var thisB = this;
-
 	//Load additional track config
 	var c = new ConfigManager({ bootConfig: thisB.config2, defaults: thisB._configDefaults(), browser: thisB });
 	c.getFinalConfig()
