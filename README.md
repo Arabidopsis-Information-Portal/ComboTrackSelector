@@ -14,24 +14,24 @@ The following steps explain how the ComboTrackSelect plugin can be installed and
 + Third, prepare a `csv` or `json` formatted file of track metadata, associated with the set of tracks set up to appear in the **Faceted** selector. Examples of such config files as used by the Araport project: [epiccogeMetaData.csv](https://github.com/Arabidopsis-Information-Portal/jbrowse-contrib/blob/master/jbrowse-contrib/data/json/arabidopsis/epiccogeMetaData.csv) or [epiccogeMetaData.json](https://github.com/Arabidopsis-Information-Portal/jbrowse-contrib/blob/master/jbrowse-contrib/data/json/arabidopsis/epiccogeMetaData.json).   
 The `trackList2.json` config file should have an appropriately configured `trackMetadata: { }` stanza like so:
 
-
-	  {
-	  	"tracks" : {}
-    	"trackMetadata": {
-        	"sources": [
-            	{
-                	"url": "arabidopsis/epiccogeMetaData.json",
-	                "type": "json"
-    	        }
-	        ],
-    	    "indexFacets": [
-        	    "Lab Name",
-	            "Type",
-    	        "Platform",
-    	        :
-    	        :
-    	    ]
-      }
+		{
+			"tracks" : {},
+			"trackMetadata": {
+				"sources": [
+				{
+					"url": "arabidopsis/epiccogeMetaData.json",
+					"type": "json"
+				}
+			],
+			"indexFacets": [
+				"Lab Name",
+				"Type",
+				"Platform",
+				:
+				:
+			]
+			}
+		}
 
 + Finally, the plugin can be enabled using either of the following methods (see official [JBrowse documentation](http://gmod.org/wiki/JBrowse_Configuration_Guide#Using_Plugins) on using plugins):
 `tracks.conf`
