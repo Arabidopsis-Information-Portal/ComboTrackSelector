@@ -113,7 +113,7 @@ _configDefaults: function() {
 
         refSeqs: "{dataRoot}/seq/refSeqs.json",
         include: [
-	    'data/json/arabidopsis/trackList2.json'
+	    '{dataRoot}/trackList2.json'
         ],
         nameUrl: "{dataRoot}/names/root.json",
 
