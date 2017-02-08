@@ -3,6 +3,7 @@ define([
            'dojo/_base/lang',
            'dojo/Deferred',
            'dojo/_base/array',
+           'dojo/io-query',
            'JBrowse/Plugin',
            'JBrowse/ConfigManager',
            'dojo/domReady!'
@@ -13,6 +14,7 @@ define([
            lang,
            Deferred,
            array,
+           ioQuery,
            JBrowsePlugin,
            ConfigManager
        ) {
@@ -102,18 +104,20 @@ createNewTrackList: function(newconfig) {
 
 _configDefaults: function() {
 
+    var queryParams = ioQuery.queryToObject( window.location.search.slice(1) );
+    var dataRoot = queryParams.data || 'data';
     return {
         tracks: [],
 
         containerID: 'GenomeBrowser',
-        dataRoot: 'data',
+        dataRoot: dataRoot,
         show_tracklist: true,
         show_nav: true,
         show_overview: true,
 
         refSeqs: "{dataRoot}/seq/refSeqs.json",
         include: [
-	    '{dataRoot}/trackList2.json'
+	    "{dataRoot}/trackList2.json"
         ],
         nameUrl: "{dataRoot}/names/root.json",
 
