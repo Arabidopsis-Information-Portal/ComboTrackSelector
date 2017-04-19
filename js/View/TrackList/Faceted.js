@@ -43,12 +43,13 @@ return declare( 'ComboTrackSelector.View.TrackList.Faceted', JBrowse.View.TrackL
         var titles = this.config.title;
         var title_list = titles.join("<br>");
 
+        var icon_elem = '<div></div>';
+        if( this.browser.config.combotracksel_icon !== undefined )
+            icon_elem = '</div><img width="20px" src="' + this.browser.config.combotracksel_icon + '"><div>'
         dojo.create('div',
             {
                 className: 'faceted_tracksel_on_off tab',
-                innerHTML: '</div><img src="' + this.browser.resolveUrl('plugins/ComboTrackSelector/img/faceted_icon.png') +
-                           '"><div>' + title_list + '</div><img src="' +
-                           this.browser.resolveUrl('plugins/ComboTrackSelector/img/green_right_arrow.png') + '">'
+                innerHTML: icon_elem + title_list + '</div><img src="' + this.browser.resolveUrl('img/right_arrow.png') + '">'
             },
             this.containerElem
         );

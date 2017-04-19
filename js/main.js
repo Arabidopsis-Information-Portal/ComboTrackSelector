@@ -44,6 +44,10 @@ return declare( JBrowsePlugin,
 				this.browser.config.stores = dojo.mixin(this.browser.config.stores, thisB.config2.stores);
 				this.browser.config.tracks = dojo.mixin(this.browser.config.tracks, thisB.config2.tracks);
 				this.browser.trackConfigsByName = dojo.mixin(this.browser.trackConfigsByName, thisB.trackConfigsByName);
+
+				// if available, store config for track selector icon
+				if( args.icon !== undefined )
+				    this.browser.config.combotracksel_icon = args.icon;
 				
 				this.browser.containerWidget.startup();
 				this.browser.onResize();

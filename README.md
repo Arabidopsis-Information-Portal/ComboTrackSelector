@@ -38,11 +38,17 @@ The `trackList2.json` config file should have an appropriately configured `track
 
 		[plugins]
 		ComboTrackSelector.location += ./plugins/ComboTrackSelector
+		ComboTrackSelector.icon += https://gravatar.com/avatar/f5ae7bbffab5fbd56777fee2720c7ee4.png
+
 `trackList.json`
 
-		"plugins": {
-			"ComboTrackSelector" : { "location" : "./plugins/ComboTrackSelector" }
-		}
+		"plugins": [
+			{
+				"name" : "ComboTrackSelector",
+				"location" : "./plugins/ComboTrackSelector",
+				"icon" : "https://gravatar.com/avatar/f5ae7bbffab5fbd56777fee2720c7ee4.png"
+			}
+		]
 
 Once enabled and configured correctly, the ComboTrackSelector should appear as seen below:
 
