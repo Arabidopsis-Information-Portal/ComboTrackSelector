@@ -16,10 +16,11 @@ The `trackList2.json` config file should have an appropriately configured `track
 
 		{
 			"tracks" : {},
+ 			"dataRoot" : "arabidopsis",
 			"trackMetadata": {
 				"sources": [
 				{
-					"url": "arabidopsis/epiccogeMetaData.json",
+					"url": "{dataRoot}/epiccogeMetaData.json",
 					"type": "json"
 				}
 			],
@@ -33,7 +34,8 @@ The `trackList2.json` config file should have an appropriately configured `track
 			}
 		}
 
-+ Finally, the plugin can be enabled using either of the following methods (see official [JBrowse documentation](http://gmod.org/wiki/JBrowse_Configuration_Guide#Using_Plugins) on using plugins):
++ Finally, the plugin can be enabled using **either** __ONE OF__ the following methods (see official [JBrowse documentation](http://gmod.org/wiki/JBrowse_Configuration_Guide#Using_Plugins) on using plugins):
+		
 `tracks.conf`
 
 		[plugins]
