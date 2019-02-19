@@ -18,10 +18,6 @@
     height: 100%;
 }
 
-.jbrowse .header {
-    margin-bottom: 5em;
-}
-
 #faceted_tracksel.active {
     -moz-box-shadow: 4px 4px 10px 3px rgba( 30, 30, 50, 0.3 );
     -webkit-box-shadow: 4px 4px 10px 3px rgba( 30, 30, 50, 0.3 );
