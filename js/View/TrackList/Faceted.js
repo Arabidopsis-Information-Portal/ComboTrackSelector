@@ -21,6 +21,8 @@ return declare( 'ComboTrackSelector.View.TrackList.Faceted', JBrowse.View.TrackL
    {
 
     renderInitial: function() {
+        dojo.query('#hierarchicalTrackPane .header').style('margin-bottom', '5em');
+
         this.containerElem = dojo.create( 'div', {
             id: 'faceted_tracksel',
             className: 'jbrowse',
